@@ -38,3 +38,7 @@ Thumbs.db
 
 # Node modules (if you include a Node-based frontend)
 node_modules/
+
+#next.js
+.next/
+/out/
