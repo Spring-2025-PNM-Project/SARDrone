@@ -1,0 +1,12 @@
+services:
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Backend:/app
+    environment:
+      - CONNECTION_STRING=${CONNECTION_STRING}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
