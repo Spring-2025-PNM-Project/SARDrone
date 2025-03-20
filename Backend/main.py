@@ -1,9 +1,11 @@
 from fastapi import FastAPI, File, UploadFile
-from classification import classify
+from classification import ClassificationModel
+import uvicorn
+
 
 app = FastAPI()
 
-classificationmodel = classify()
+classificationmodel = ClassificationModel()
 
 
 @app.get('/')
@@ -18,4 +20,6 @@ async def process_image(file: UploadFile = File(...)):
         return {"result": result}
     except Exception as e:
         return {"message": e.args}
-        
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", port=8000, log_level="info")
