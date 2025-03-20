@@ -8,7 +8,7 @@ services:
     volumes:
       - ./Backend:/app
     environment:
-      - CONNECTION_STRING=${CONNECTION_STRING}
+      - MONGODB_URL=${MONGODB_URL}
       - GEMINI_API_KEY=${GEMINI_API_KEY}
 
   frontend:
