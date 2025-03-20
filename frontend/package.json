@@ -1,26 +1,23 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "sardrone",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
-    "tailwind-init": "npx tailwindcss init -p"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.4.21",
-    "framer-motion": "^12.5.0",
-    "next": "^15.2.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "next": "15.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.0.14",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17"
-  },
-  "description": ""
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "@eslint/eslintrc": "^3"
+  }
 }
