@@ -33,5 +33,13 @@ Welcome to the **People Detector Web App**! This project is a web application th
 ## **Setup & Installation** ⚙️
 
 1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
+    ```bash
+    git clone <repository-url>
+    ```
+
+2. Set up the `.env` based on `.env.example`
+
+3. Run using Docker
+    ```bash
+    docker compose up --build
+    ```
