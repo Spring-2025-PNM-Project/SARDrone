@@ -41,5 +41,5 @@ Welcome to the **People Detector Web App**! This project is a web application th
 
 3. Run using Docker
     ```bash
-    docker compose up --build
+    docker-compose -f docker-compose.dev.yml up --build
     ```
