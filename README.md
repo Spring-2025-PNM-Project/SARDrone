@@ -19,12 +19,13 @@ Welcome to the **People Detector Web App**! This project is a web application th
 
 ## **Architecture** 🏗️
 
-- **Backend**  
+- **Backend**
+
   - Built using **FastAPI** and hosted on **AWS EC2**.
   - Processes image uploads and interacts with the Gemini API for classification.
   - Provides RESTful endpoints to receive and process images.
 
-- **Frontend**  
+- **Frontend**
   - Displays uploaded images and their classification results.
   - Can be hosted on the same EC2 instance or via a static hosting solution (e.g., **AWS S3** + **CloudFront**).
 
@@ -33,13 +34,17 @@ Welcome to the **People Detector Web App**! This project is a web application th
 ## **Setup & Installation** ⚙️
 
 1. **Clone the repository:**
-    ```bash
-    git clone <repository-url>
-    ```
+
+   ```bash
+   git clone <repository-url>
+   ```
 
 2. Set up the `.env` based on `.env.example`
 
 3. Run using Docker
-    ```bash
-    docker-compose -f docker-compose.dev.yml up --build
-    ```
+
+   ```bash
+   docker-compose -f docker-compose.dev.yml up --build
+   ```
+
+4. Visit the website at http://localhost:3000/
