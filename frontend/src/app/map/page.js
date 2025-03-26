@@ -1,8 +1,10 @@
+import MapComponent from "../components/MapComponent"
+
 export default function Map() {
-  return (
+  return(
     <div>
-      <h1>Map</h1>
-      <p>This is the Map page.</p>
+      <MapComponent></MapComponent>
     </div>
-  );
+
+  )
 }
